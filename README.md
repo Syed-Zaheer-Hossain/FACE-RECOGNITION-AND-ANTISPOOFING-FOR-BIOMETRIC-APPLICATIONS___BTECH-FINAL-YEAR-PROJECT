@@ -24,8 +24,7 @@ This work is supported by a **self-made dataset** and has been **published as a 
 
 - **DOI:** https://doi.org/10.1007/978-981-96-7614-9_32  
 - **Publisher:** Springer (Lecture Notes in Networks and Systems (LNNS,volume 1358))
-- **Authors:**  
-  Saiyed Umer, Surjit Mandal, Syed Zaheer Hossain, Anirban Guha, Ranjeet Kumar Rout  
+- **Authors:**  Saiyed Umer, Surjit Mandal, Syed Zaheer Hossain, Anirban Guha, Ranjeet Kumar Rout  
 
 If you use this project or dataset for academic or research purposes, please cite this paper.
 
