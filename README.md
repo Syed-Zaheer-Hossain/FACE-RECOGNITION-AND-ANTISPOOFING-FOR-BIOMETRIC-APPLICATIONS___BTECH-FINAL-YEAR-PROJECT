@@ -60,43 +60,33 @@ Authentication is granted **only when both modules succeed**, making the system 
 ---
 
 ```
-FACE-RECOGNITION-AND-ANTISPOOFING-FOR-BIOMETRIC-APPLICATIONS
+FACE-RECOGNITION-AND-ANTISPOOFING-FOR-BIOMETRIC-APPLICATIONS-BTECH-FINAL-YEAR-PROJECT
 │
-├── Dataset/
-│   ├── Real/
-│   │   ├── Images/            # Live face images captured from real users
-│   │   └── Videos/            # Live face video samples
-│   │
-│   ├── Spoof/
-│   │   ├── Printed_Photos/    # Spoof attacks using printed face images
-│   │   ├── Screen_Replay/     # Spoof attacks using mobile/laptop screens
-│   │   └── Video_Attacks/     # Replayed video-based spoof samples
-│   │
-│   └── README.md              # Dataset description & acquisition details
+├── ANTI SPOOFING/
+│   ├── anti-spoof-facenet.py
+│   ├── anti-spoof-lbp.py
+│   ├── anti_spoof_hog.py
+│   ├── antispoofing_vgg16.py
+│   ├── antispoofing_vgg19.py
+│   └── dense_antispoof.py
 │
-├── AntiSpoofing/
-│   ├── preprocessing.py       # Preprocessing for spoof detection
-│   ├── feature_extraction.py  # Liveness / texture feature extraction
-│   ├── train_model.py         # Anti-spoofing model training
-│   ├── test_model.py          # Model evaluation & testing
-│   └── utils.py               # Helper functions
+├── FACE PREPROCESSING/
+│   ├── Recognition_Face_crop_Final_MTCNN.py
+│   └── anti-spoof_Face_crop_Final_MTCNN.py
 │
-├── FaceRecognition/
-│   ├── face_detection.py      # Face detection logic
-│   ├── face_alignment.py      # Face normalization & alignment
-│   ├── feature_extractor.py   # Facial feature extraction
-│   ├── classifier.py          # Identity classification
-│   └── recognition_pipeline.py# End-to-end recognition workflow
+├── FACIAL FEATURE EXTRACTION/
+│   ├── Face_Recognition_Facenet.ipynb
+│   ├── feature_extraction_FaceNet.py
+│   ├── feature_extraction_hog_final.py
+│   ├── lbp-final.py
+│   ├── vgg16.py
+│   └── vgg19.py
 │
-├── GUI_Interface/
-│   ├── main_gui.py             # Tkinter-based GUI entry point
-│   ├── webcam_stream.py       # Real-time webcam feed
-│   ├── auth_logic.py          # Combined recognition + anti-spoof logic
-│   └── assets/                # Icons, images, UI resources
+├── FINAL COMBINED GUI INTERFACE TKINTER/
+│   ├── Final gui interface combined recognition antispoofing.py
+│   └── Recognition_GUI.ipynb
 │
-├── requirements.txt           # Python dependencies
-├── README.md                  # Project documentation
-└── LICENSE                    # MIT License
+└── README.md
 ```
 
 ---
@@ -105,13 +95,10 @@ FACE-RECOGNITION-AND-ANTISPOOFING-FOR-BIOMETRIC-APPLICATIONS
 
 | Folder / File | Description |
 |--------------|-------------|
-| **Dataset/** | Self-made dataset with real and spoof face samples used in the published paper |
 | **AntiSpoofing/** | Liveness detection and spoof prevention modules |
 | **FaceRecognition/** | Face detection, feature extraction, and identity recognition |
 | **GUI_Interface/** | Integrated real-time GUI application |
-| **requirements.txt** | Required Python dependencies |
 | **README.md** | Project documentation |
-| **LICENSE** | MIT License |
 
 ---
 
@@ -125,8 +112,6 @@ FACE-RECOGNITION-AND-ANTISPOOFING-FOR-BIOMETRIC-APPLICATIONS
   - Video-based attacks  
 - Used for training and evaluating both face recognition and anti-spoofing models  
 
-> Dataset availability can be added here (Google Drive / Zenodo) if required.
-
 ---
 
 ## 🛠️ Installation & Setup
@@ -134,7 +119,7 @@ FACE-RECOGNITION-AND-ANTISPOOFING-FOR-BIOMETRIC-APPLICATIONS
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/Syed-Zaheer-Hossain/FACE-RECOGNITION-AND-ANTISPOOFING-FOR-BIOMETRIC-APPLICATIONS-BTECH-FINAL-YEAR-PROJECT-.git
-cd FACE-RECOGNITION-AND-ANTISPOOFING-FOR-BIOMETRIC-APPLICATIONS-BTECH-FINAL-YEAR-PROJECT-
+cd FACE-RECOGNITION-AND-ANTISPOOFING-FOR-BIOMETRIC-APPLICATIONS-BTECH-FINAL-YEAR-PROJECT
 ```
 
 ### 2️⃣ Create Virtual Environment (Optional)
@@ -179,15 +164,8 @@ python main.py
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License.  
-See the LICENSE file for more details.
-
----
-
 ## 🤝 Acknowledgements
 
-- Springer LNCS  
-- Academic mentors and faculty  
-- Contributors and reviewers  
+- Springer LNCS
+- Academic mentors and faculty (Aliah University, Kolkata, West Bengal, India)
+- Contributors and reviewers
